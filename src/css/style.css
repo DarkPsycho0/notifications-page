@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background-color: hsl(210, 60%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 20px hsl(211, 68%, 94%);
+    width: 730px;
+    height: 840px;
+    padding: 35px 34px;
+    border-radius: 20px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.header span{
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    padding: 2px 10px;
+    margin-left: 10px;
+}
+.header p{
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+}
+.mensage{
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.mensage .profile-picture{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+.mensage p{
+    color: hsl(219, 12%, 42%);
+}
+.mensage .profile-name, .mensage .post{
+    font-weight: 800;
+    cursor: pointer;
+}
+.mensage .profile-name{
+    color: hsl(224, 21%, 14%);
+}
+.mensage .post{
+    color: hsl(219, 12%, 42%);
+}
+.mensage .time-ago{
+    color: hsl(219, 14%, 63%);
+}
+.mensage .private{
+    border: 1px solid hsl(205, 33%, 90%);
+    margin-top: 10px;
+    padding: 20px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.image{
+    display: flex;
+    margin-left: 185px;
+    width: 45px;
+    height: 45px;
+    border: 3px solid hsl(0, 0%, 100%);
+}
+.profile-name:hover, .mensage .post:hover, .header p:hover{
+    color: hsl(219, 85%, 26%);
+}
+.mensage .private:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+.image:hover{
+    border: 3px solid hsl(205, 33%, 90%);
+    border-radius: 8px;
+}
+.active{
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 20px;
+}
