@@ -7,13 +7,19 @@
         padding: 12px;
     }
 }
+@media(max-width:768px){
+    .container{
+        width: 670px;
+        height: 820px;
+    }
+}
 @media(max-width:425px){
     body{
         height: 100%;
         font-size: 15px;
     }
     .container{
-        width: 405px;
+        width: 375px;
         height: 900px;
         margin: 20px 0;
     }
@@ -26,7 +32,7 @@
         font-size: 14px;
     }
     .container{
-        width: 355px;
+        width: 340px;
         height: 940px;
         padding: 25px 20px;
     }
