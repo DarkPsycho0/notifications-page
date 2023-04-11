@@ -1,10 +1,14 @@
 const markAllAsRead = document.querySelector('.mark-all-as-read')
-const notificationsNumber = document.querySelector('.notifications-number')
+const notRead = document.querySelectorAll('.mensage')
 
 markAllAsRead.addEventListener('click', () =>{
-    const notRead = document.querySelectorAll('.mensage')
     notRead.forEach(element => {
         element.classList.remove('active')
     });
-    notificationsNumber.innerHTML = 0
+})
+
+markAllAsRead.addEventListener('click', () =>{
+    const notificationsDisplay = document.querySelector('.notifications-number')
+    const notificationsNumbers = document.querySelectorAll('.active')
+    notificationsDisplay.innerHTML = notificationsNumbers.length
 })
